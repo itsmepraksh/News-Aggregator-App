@@ -1,16 +1,17 @@
 
 import { fetchData } from "./fetchData.js"; 
+import { API_URLS } from "./config.js";
 
- 
+export async function getData(selectedApi) {
 
-export async function getData() {
-
+    // console.log(selectedApi)
 
     let newsData = []
 
     try {
 
-        const fetchedData = await fetchData("https://saurav.tech/NewsAPI/top-headlines/category/health/in.json")
+        // const fetchedData = await fetchData(`https://saurav.tech/NewsAPI/top-headlines/category/${selectedApi}/in.json`)
+        const fetchedData = await fetchData (API_URLS[selectedApi])
 
         // console.log(fetchedData.articles)
         newsData = fetchedData.articles

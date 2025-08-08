@@ -1,4 +1,4 @@
- 
+
 
 export async function fetchData(url, retries = 3, delay = 1500) {
 
@@ -28,4 +28,4 @@ export async function fetchData(url, retries = 3, delay = 1500) {
 
     }
     return null;
-}
+} 
