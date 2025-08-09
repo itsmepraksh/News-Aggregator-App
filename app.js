@@ -91,7 +91,7 @@ form.addEventListener("submit", (e) => {
             return miniNews.title.toLowerCase().includes(searchKeyword) || miniNews.description.toLowerCase().includes(searchKeyword)
         })
 
-
+         
         // console.log(filteredData.length) 
 
         filteredData.length > 0 ? renderNews(filteredData) : renderNews(null);
