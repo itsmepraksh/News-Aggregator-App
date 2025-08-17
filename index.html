@@ -17,21 +17,20 @@
 </head>
 <body>
     <main >
-        <h1 class="text-3xl font-bold font-[sans-serif] pb-10">News-Aggregator-App</h1>
+        <h1 class="text-3xl font-bold font-[sans-serif] pb-10 text-center">NewsFeed</h1>
 
-        <form class="pb-2">
-            <h1>Search here</h1>
-            <input type="text" placeholder="search.." class="bg-gray-200 px-4 py-1">
-            <button class="bg-gray-300 px-4 py-1">enter</button>
+        <form class="pb-2 flex justify-center gap-2 items-center"> 
+            <input type="text" placeholder="search news.." class="bg-gray-200 px-6 py-1 rounded-md lg:w-[40%]">
+            <button class="bg-blue-500 text-white px-4 py-1 active:scale-[0.9] active:bg-blue-600 rounded-md lg:w-[10%]">enter</button>
         </form>
 
-       <h1 class="pb-4 text-lg font-medium">Category : </h1>
-        <div id="category" class="flex flex-wrap gap-4 text-xs font-medium w-full ">
+       
+        <div id="category" class="flex   gap-3 text-xs font-medium w-full py-5 ">
      
-            <div id="general" class="py-2 px-4 bg-gray-300 active:scale-[0.9] active:bg-zinc-400">general</div>
-            <div id="technology"  class="py-2 px-4 bg-gray-300 active:scale-[0.9] active:bg-zinc-400">technology</div>
-            <div id="sports"  class="py-2 px-4 bg-gray-300 active:scale-[0.9] active:bg-zinc-400">sports</div>
-            <div id="business"  class="py-2 px-4 bg-gray-300 active:scale-[0.9] active:bg-zinc-400">business</div>
+            <div id="general" class="py-2 px-4 bg-gray-300 active:scale-[0.9] active:bg-blue-400">general</div>
+            <div id="technology"  class="py-2 px-4 bg-gray-300 active:scale-[0.9] active:bg-blue-400">technology</div>
+            <div id="sports"  class="py-2 px-4 bg-gray-300 active:scale-[0.9] active:bg-blue-400">sports</div>
+            <div id="business"  class="py-2 px-4 bg-gray-300 active:scale-[0.9] active:bg-blue-400">business</div>
         </div>
 
         <div id="news-box" class=" flex flex-col md:flex-row md:flex-wrap  gap-7  py-10">
